@@ -10,10 +10,12 @@ public class Interactable : MonoBehaviour
     public float progress = 0f;
     private float timer = 0f;
     private bool isPlayerOnObject = false;
+    [SerializeField] LootTable lootTable;
 
     private void Start()
     {
         gm = GameManager.instance;
+        progress = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -44,14 +46,23 @@ public class Interactable : MonoBehaviour
             progress = timer / fillTime;
             gm.fillBar.fillAmount = progress;
         }
-
-        if(progress >= 1f)
+        else if(Input.GetKeyUp(KeyCode.F) && progress < 1f)
         {
-            gameObject.SetActive(false);
             gm.loadingBar.SetActive(false);
             timer = 0f;
             progress = 0f;
             gm.fillBar.fillAmount = 0f;
+        }
+
+        if (progress >= 1f)
+        {
+            gm.loadingBar.SetActive(false);
+            timer = 0f;
+            progress = 0f;
+            gm.fillBar.fillAmount = 0f;
+            gm.inventory.Add(lootTable.GetDrop());
+            gm.UpdateInventory();
+            gameObject.SetActive(false);
         }
     }
 }
