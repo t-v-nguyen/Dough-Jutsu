@@ -1452,13 +1452,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "How To Play:\nThere are two modes in the game: Raid Mode and Kitchen Mode.\n\nIn
-    Raid Mode, you are expected to navigate around a stage and loot containers (cabinets
-    and boxes) by holding \"F\" while your player is on the container.\nTo extract
-    with all of your loot, reach the pole to be extracted. \nBy pressing numbers
-    between 1-8, it discards the item in the slot. This is NOT reversable.\n\nIn
-    Kitchen Mode, the ingredients are to the left and the recipes are to the right.\nThe
-    inspect button notifies you what ingredients are required for that recipe.\nIf
-    you have all the ingredients, you can bake and then the recipe name will be revealed.\n"
+    Raid Mode, you are expected to navigate around a stage through arrow keys or
+    WASD. Your player can double jump.\nYou can loot containers (cabinets and boxes)
+    by holding \"F\" while your player is on the container.\nTo extract with all
+    of your loot, reach the pole to be extracted. \nBy pressing numbers between 1-8,
+    it discards the item in the slot. This is NOT reversable.\nIf you lose, by touching
+    a trap or running out of time you lose all of your loot.\n\nIn Kitchen Mode,
+    the ingredients are to the left and the recipes are to the right.\nThe inspect
+    button notifies you what ingredients are required for that recipe.\nIf you have
+    all the ingredients, you can bake and then the recipe name will be revealed.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

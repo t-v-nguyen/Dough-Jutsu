@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     private float dirX;
     private enum AirState { land, jump, fall }
+    private int jumpsRemaining = 2;
     // Start is called before the first frame update
     private void Start()
     {
@@ -30,11 +31,13 @@ public class PlayerMovement : MonoBehaviour
     {
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
-        if (Input.GetButtonDown("Jump") && isGrounded())
+        if (Input.GetButtonDown("Jump") && jumpsRemaining > 0)
         {
+            jumpsRemaining--;
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
+        if(isGrounded()) jumpsRemaining = 2;
         UpdateAnimationUpdate();
     }
 
@@ -77,19 +80,19 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, -Vector2.down, -.1f, jumpableGround);
     }
 
-    private void OnCollisionEnter2D(Collision other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (coll.gameObject.CompareTag("trap"))
+        if (other.gameObject.CompareTag("trap"))
         {
             gm.displayLose.SetActive(true);
-            Time.timeScale = 0f;
-            Invoke("PlayerLoses", 2f);
+            rb.bodyType = RigidbodyType2D.Static;
+            Invoke("PlayerLoses", 1f);
         }
     }
 
     private void PlayerLoses()
     {
         SceneManager.LoadScene("ModeMenu");
-        Time.timeScale = 1f;
+        
     }
 }
