@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Menus : MonoBehaviour
 {
+
+    public GameObject helpPage;
     public void Play()
     {
         SceneManager.LoadScene("ModeMenu");
@@ -37,5 +39,14 @@ public class Menus : MonoBehaviour
     public void House()
     {
         SceneManager.LoadScene("HouseStage");
+    }
+
+    public void OpenHelp()
+    {
+        helpPage.SetActive(true);
+    }
+    public void CloseHelp()
+    {
+        helpPage.SetActive(false);
     }
 }

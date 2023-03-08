@@ -5,5 +5,16 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Item : ScriptableObject
 {
-    public string Name;
+    public string itemName;
+    public enum ItemType 
+    {
+        ingredient,
+        recipe
+    }
+
+    [SerializeField]
+    public ItemType itemType;
+
+    public string recipe;
+    public bool identified;
 }

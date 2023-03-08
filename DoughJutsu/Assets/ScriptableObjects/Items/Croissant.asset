@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 578ac8b54e646cb45ae29dd9556f79ff, type: 3}
-  m_Name: Yeast
+  m_Name: Croissant
   m_EditorClassIdentifier: 
-  itemName: yeast
-  itemType: 0
-  recipe: 
+  itemName: unknown recipe
+  itemType: 1
+  recipe: butter-1,flour-1,milk-1,sugar-1,water-1,yeast-1
+  identified: 0

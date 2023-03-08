@@ -4,6 +4,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class GameManager : MonoBehaviour
     public Image fillBar;
     public List<Item> inventory;
     public GameObject inventoryUI;
+    public float timeRemaining = 60;
+    public TMP_Text timeText;
+    public GameObject displayLose;
 
 
     private void Awake()
@@ -29,10 +33,23 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         loadingBar.SetActive(false);
+        displayLose.SetActive(false);
     }
 
     private void Update()
     {
+        if (timeRemaining > 0)
+        {
+            timeRemaining -= Time.deltaTime;
+            UpdateTimeText();
+        }
+        else
+        {
+            displayLose.SetActive(true);
+            Time.timeScale = 0f;
+            Invoke("PlayerLoses", 2f);
+        }
+
         if (Input.GetKeyDown(KeyCode.Alpha1) && inventory.Count > 0)
         {
             inventory.RemoveAt(0);
@@ -85,7 +102,7 @@ public class GameManager : MonoBehaviour
                 if (childTransform != null)
                 {
                     GameObject childGameObject = childTransform.gameObject;
-                    childGameObject.GetComponent<TMP_Text>().text = inventory[i - 1].name;
+                    childGameObject.GetComponent<TMP_Text>().text = inventory[i - 1].itemName;
                 }
             }
         }
@@ -101,9 +118,16 @@ public class GameManager : MonoBehaviour
             }
     }
 
-    public void UpdateRemoveInventory()
+    private void UpdateTimeText()
     {
-        
+        int minutes = Mathf.FloorToInt(timeRemaining / 60);
+        int seconds = Mathf.FloorToInt(timeRemaining % 60);
+        timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
+    private void PlayerLoses()
+    {
+        SceneManager.LoadScene("ModeMenu");
+        Time.timeScale = 1f;
+    }
 }

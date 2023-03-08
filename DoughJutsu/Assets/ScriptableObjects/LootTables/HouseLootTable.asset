@@ -13,5 +13,17 @@ MonoBehaviour:
   m_Name: HouseLootTable
   m_EditorClassIdentifier: 
   table:
-  - drop: {fileID: 11400000, guid: f46ee5163921ad04a927f64bab06be4b, type: 2}
-    weight: 0
+  - drop: {fileID: 11400000, guid: 9e1f2a8a6f78b634b8650914a3918c68, type: 2}
+    weight: 30
+  - drop: {fileID: 11400000, guid: a3d13c1cd85cb194f92b18fa44785209, type: 2}
+    weight: 30
+  - drop: {fileID: 11400000, guid: 90836196575241c49b0643282f171f70, type: 2}
+    weight: 30
+  - drop: {fileID: 11400000, guid: 24939c5c8e11b524a86476bbe4da55db, type: 2}
+    weight: 30
+  - drop: {fileID: 11400000, guid: f7f6093cefd4e56409e6dec7c044dbcf, type: 2}
+    weight: 30
+  - drop: {fileID: 11400000, guid: 180f28495155d1d4798eead25d729129, type: 2}
+    weight: 20
+  - drop: {fileID: 11400000, guid: 89a49b4f030b7ff43850f3046d2b4238, type: 2}
+    weight: 30

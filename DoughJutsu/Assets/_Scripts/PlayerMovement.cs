@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    private GameManager gm;
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     private Animator anim;
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         coll = GetComponent<BoxCollider2D>();
+        gm = GameManager.instance;
     }
 
     // Update is called once per frame
@@ -57,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetInteger("Airstate", 1);
         }
-        else if(rb.velocity.y < -.1f)
+        else if (rb.velocity.y < -.1f)
         {
             anim.SetInteger("Airstate", 2);
         }
@@ -65,12 +68,28 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetInteger("Airstate", 0);
         }
-        
+
 
     }
 
     private bool isGrounded()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, -Vector2.down, -.1f, jumpableGround);
+    }
+
+    private void OnCollisionEnter2D(Collision other)
+    {
+        if (coll.gameObject.CompareTag("trap"))
+        {
+            gm.displayLose.SetActive(true);
+            Time.timeScale = 0f;
+            Invoke("PlayerLoses", 2f);
+        }
+    }
+
+    private void PlayerLoses()
+    {
+        SceneManager.LoadScene("ModeMenu");
+        Time.timeScale = 1f;
     }
 }

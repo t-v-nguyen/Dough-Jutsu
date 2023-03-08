@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 578ac8b54e646cb45ae29dd9556f79ff, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: 
-  Name: 
+  itemName: water
+  itemType: 0
+  recipe: 
