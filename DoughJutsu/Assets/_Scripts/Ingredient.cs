@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu]
-public class Item : ScriptableObject
+public class Ingredient : Item
 {
-    public string itemName;
-    public bool isRecipe;
+    Ingredient()
+    {
+        isRecipe = false;
+    }
 }

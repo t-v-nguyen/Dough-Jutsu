@@ -9,6 +9,4 @@ public static class Pantry
     {
         PantryItems = new List<Item>();
     }
-    
-    
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class KitchenUI : MonoBehaviour
 {
@@ -29,9 +30,25 @@ public class KitchenUI : MonoBehaviour
     public string GetPantryContents()
     {
         string contents = "Pantry:\n";
+        Dictionary<Item, int> inventory = new Dictionary<Item, int>();
         foreach (Item item in Pantry.PantryItems)
         {
-            if (item.itemType == Item.ItemType.ingredient) contents += item.itemName + "\n";
+            if (!item.isRecipe)
+            {
+                int quantity;
+                if(inventory.TryGetValue(item, out quantity))
+                {
+                    inventory[item] = quantity + 1;
+                }
+                else
+                {
+                    inventory[item] = 1;
+                }
+            }
+        }
+        foreach(KeyValuePair<Item, int> kvp in inventory)
+        {
+            contents += $"{kvp.Key.itemName}: {kvp.Value} \n";
         }
         return contents;
     }
@@ -41,27 +58,27 @@ public class KitchenUI : MonoBehaviour
         float buttonSpacing = 5f;
         foreach (Item item in Pantry.PantryItems)
         {
-            if (item.itemType == Item.ItemType.recipe)
+            if (item.isRecipe)
             {
+                Recipe recipe = (Recipe) item;
                 GameObject recipeItem = Instantiate(recipePrefab, recipeText.transform);
                 RectTransform buttonRectTransform = recipeItem.GetComponent<RectTransform>();
                 buttonRectTransform.anchoredPosition = new Vector2(0, -i * (buttonRectTransform.rect.height + buttonSpacing));
                 Transform textChild = recipeItem.transform.Find("RecipeName");
-                textChild.GetComponent<TMP_Text>().text = item.identified ? item.name : item.itemName;
+                textChild.GetComponent<TMP_Text>().text = recipe.identified ? recipe.itemName : "Unknown recipe";
 
                 Transform inspectChild = recipeItem.transform.Find("Inspect");
                 inspectChild.GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    InspectClick(item);
+                    InspectClick(recipe);
                 });
 
                 Transform bakeChild = recipeItem.transform.Find("Bake");
                 bakeChild.GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    bool success = FollowRecipe(item);
-                    if (success)
+                    if (FollowRecipe(recipe))
                     {
-                        textChild.GetComponent<TMP_Text>().text = item.identified ? item.name : item.itemName;
+                        textChild.GetComponent<TMP_Text>().text = recipe.identified ? recipe.itemName : "Unknown recipe";
                         pantryText.text = GetPantryContents();
                     }
                     else
@@ -75,10 +92,14 @@ public class KitchenUI : MonoBehaviour
         }
     }
 
-    public void InspectClick(Item item)
+    public void InspectClick(Recipe recipe)
     {
         instructionPanel.SetActive(true);
-        string displayText = item.recipe.Replace(",", "\n");
+        string displayText = "";
+        foreach(var tuple in recipe.recipeList)
+        {
+            displayText += tuple.Item1.itemName + ": " + tuple.Item2 + "\n"; 
+        }
         instructionPanel.transform.Find("ingredients").GetComponent<TMP_Text>().text = displayText;
     }
 
@@ -91,83 +112,9 @@ public class KitchenUI : MonoBehaviour
         failPanel.SetActive(false);
     }
 
-    public bool FollowRecipe(Item recipe)
+    public bool FollowRecipe(Recipe recipe)
     {
-        int counter = 0;
-        bool butter = false;
-        bool flour = false;
-        bool milk = false;
-        bool sugar = false;
-        bool water = false;
-        bool yeast = false;
-        foreach (Item item in Pantry.PantryItems)
-        {
-            if (item.itemName == "butter")
-            {
-                butter = true;
-            }
-            if (item.itemName == "flour")
-            {
-                flour = true;
-            }
-            if (item.itemName == "milk")
-            {
-                milk = true;
-            }
-            if (item.itemName == "sugar")
-            {
-                sugar = true;
-            }
-            if (item.itemName == "water")
-            {
-                water = true;
-            }
-            if (item.itemName == "yeast")
-            {
-                yeast = true;
-            }
-            counter += 1;
-        }
 
-        if (butter && flour && milk && sugar && water && yeast)
-        {
-            for (int i = Pantry.PantryItems.Count - 1; i >= 0; i--)
-            {
-                Item item = Pantry.PantryItems[i];
-                if (item.itemName == "butter" && butter)
-                {
-                    butter = false;
-                    Pantry.PantryItems.RemoveAt(i);
-                }
-                if (item.itemName == "flour" && flour)
-                {
-                    flour = false;
-                    Pantry.PantryItems.RemoveAt(i);
-                }
-                if (item.itemName == "milk" && milk)
-                {
-                    milk = false;
-                    Pantry.PantryItems.RemoveAt(i);
-                }
-                if (item.itemName == "sugar" && sugar)
-                {
-                    sugar = false;
-                    Pantry.PantryItems.RemoveAt(i);
-                }
-                if (item.itemName == "water" && water)
-                {
-                    water = false;
-                    Pantry.PantryItems.RemoveAt(i);
-                }
-                if (item.itemName == "yeast" && yeast)
-                {
-                    yeast = false;
-                    Pantry.PantryItems.RemoveAt(i);
-                }
-            }
-            recipe.identified = true;
-            return true;
-        }
-        else return false;
+        return true;
     }
 }
