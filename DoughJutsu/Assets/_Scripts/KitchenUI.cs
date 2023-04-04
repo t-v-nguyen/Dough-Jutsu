@@ -13,12 +13,12 @@ public class KitchenUI : MonoBehaviour
     public List<Item> presetPantryList;
     public GameObject instructionPanel;
     public GameObject failPanel;
-    public GameObject bakePanel;
+    public GameObject bakeObject;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        // Pantry.PantryItems = presetPantryList;
         if (pantryText != null)
         {
             pantryText.text = GetPantryContents();
@@ -34,6 +34,7 @@ public class KitchenUI : MonoBehaviour
         Dictionary<Item, int> inventory = new Dictionary<Item, int>();
         foreach (Item item in Pantry.PantryItems)
         {
+            Debug.Log(item);
             if (!item.isRecipe)
             {
                 int quantity;
@@ -88,6 +89,14 @@ public class KitchenUI : MonoBehaviour
             displayText += recipe.recipleIngredient[i].itemName + ": " + recipe.recipeAmount[i].ToString() + "\n";
         }
         instructionPanel.transform.Find("ingredients").GetComponent<TMP_Text>().text = displayText;
+        if(recipe.identified)
+        {
+            
+        }
+        else
+        {
+            
+        }
     }
 
     public void CloseInstruction()

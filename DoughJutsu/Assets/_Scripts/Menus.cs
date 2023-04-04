@@ -40,6 +40,14 @@ public class Menus : MonoBehaviour
     {
         SceneManager.LoadScene("HouseStage");
     }
+    public void Restaurant()
+    {
+        SceneManager.LoadScene("RestaurantStage");
+    }
+    public void Market()
+    {
+        SceneManager.LoadScene("MarketStage");
+    }
 
     public void OpenHelp()
     {

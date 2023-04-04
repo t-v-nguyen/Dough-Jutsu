@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/HouseStage.unity
     guid: 2217010a07a1da44fa433a1f79c322f6
+  - enabled: 1
+    path: Assets/_Scenes/MarketStage.unity
+    guid: 41d6293bcd0cbb048a4f884bd0a48310
+  - enabled: 1
+    path: Assets/_Scenes/RestaurantStage.unity
+    guid: 95d6f1091cea4354e8eb01681621026f
   m_configObjects: {}
