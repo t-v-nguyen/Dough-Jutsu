@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df886b3cb1f3e79469c581c2a73fb8f4, type: 3}
   m_Name: Vanilla Cake
   m_EditorClassIdentifier: 
-  itemName: vanillaCake
+  itemName: Vanilla Cake
   isRecipe: 1
+  isKey: 0
   identified: 0
   recipleIngredient:
   - {fileID: 11400000, guid: 0c99235f513e4a64cb678ddb1e01ae3d, type: 2}

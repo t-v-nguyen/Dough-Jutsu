@@ -8,5 +8,6 @@ public class Ingredient : Item
     Ingredient()
     {
         isRecipe = false;
+        isKey = false;
     }
 }

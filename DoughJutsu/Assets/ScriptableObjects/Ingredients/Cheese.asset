@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b2388a9afeada4d8bd585fcb17769d, type: 3}
   m_Name: Cheese
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: cheese
   isRecipe: 0
+  isKey: 0

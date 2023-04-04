@@ -9,6 +9,7 @@ public class Recipe : Item
     Recipe()
     {
         isRecipe = true;
+        isKey = false;
     }
     public bool identified;
     public enum Grade 

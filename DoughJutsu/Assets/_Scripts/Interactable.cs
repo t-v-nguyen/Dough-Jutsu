@@ -10,6 +10,7 @@ public class Interactable : MonoBehaviour
     public float progress = 0f;
     private float timer = 0f;
     private bool isPlayerOnObject = false;
+    public bool isDoor;
     [SerializeField] LootTable lootTable;
 
     private void Start()
@@ -60,8 +61,11 @@ public class Interactable : MonoBehaviour
             timer = 0f;
             progress = 0f;
             gm.fillBar.fillAmount = 0f;
-            gm.inventory.Add(lootTable.GetDrop());
-            gm.UpdateInventory();
+            if(!isDoor)
+            {
+                gm.inventory.Add(lootTable.GetDrop());
+                gm.UpdateInventory();
+            }
             gameObject.SetActive(false);
         }
     }

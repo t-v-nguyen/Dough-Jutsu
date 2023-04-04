@@ -1474,6 +1474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d49f0f5ed864941af8fe45218dc50e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  helpPage: {fileID: 0}
 --- !u!114 &929324001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1586,6 +1587,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 89a49b4f030b7ff43850f3046d2b4238, type: 2}
   instructionPanel: {fileID: 1057997135}
   failPanel: {fileID: 436670564}
+  bakePanel: {fileID: 0}
 --- !u!1 &954165293
 GameObject:
   m_ObjectHideFlags: 0

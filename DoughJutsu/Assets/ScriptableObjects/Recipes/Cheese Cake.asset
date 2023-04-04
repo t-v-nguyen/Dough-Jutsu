@@ -12,9 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df886b3cb1f3e79469c581c2a73fb8f4, type: 3}
   m_Name: Cheese Cake
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Cheese Cake
   isRecipe: 1
+  isKey: 0
   identified: 0
-  recipleIngredient: []
-  recipeAmount: 
+  recipleIngredient:
+  - {fileID: 11400000, guid: a95f4dda5168f03448731fae550220c6, type: 2}
+  - {fileID: 11400000, guid: 0c99235f513e4a64cb678ddb1e01ae3d, type: 2}
+  - {fileID: 11400000, guid: 488fb5c2bdef8d74cb0c6b017301496e, type: 2}
+  - {fileID: 11400000, guid: 0c9fab1e0933c904bbac68fd9f0293ec, type: 2}
+  - {fileID: 11400000, guid: aad8cec44ed302a468bf207c7b0771b4, type: 2}
+  - {fileID: 11400000, guid: 1e3d2434f7cb95741b66c9bcce146b96, type: 2}
+  recipeAmount: 020000000400000002000000040000000100000004000000
   grade: 0

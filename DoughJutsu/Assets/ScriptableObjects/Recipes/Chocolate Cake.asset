@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df886b3cb1f3e79469c581c2a73fb8f4, type: 3}
   m_Name: Chocolate Cake
   m_EditorClassIdentifier: 
-  itemName: vanillaCake
+  itemName: Chocolate Cake
   isRecipe: 1
+  isKey: 0
   identified: 0
   recipleIngredient:
   - {fileID: 11400000, guid: 0c99235f513e4a64cb678ddb1e01ae3d, type: 2}
@@ -22,6 +23,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a95f4dda5168f03448731fae550220c6, type: 2}
   - {fileID: 11400000, guid: e40cd97c748c75349875f5b7a0bd22f3, type: 2}
   - {fileID: 11400000, guid: 9989516578568e9449d5ae0a3988c056, type: 2}
-  - {fileID: 11400000, guid: aad8cec44ed302a468bf207c7b0771b4, type: 2}
-  recipeAmount: 02000000010000000200000002000000010000000100000002000000
+  - {fileID: 11400000, guid: f667be863f89939428055c698a326473, type: 2}
+  recipeAmount: 02000000010000000200000002000000010000000100000003000000
   grade: 0

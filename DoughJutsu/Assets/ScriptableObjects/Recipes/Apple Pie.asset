@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df886b3cb1f3e79469c581c2a73fb8f4, type: 3}
   m_Name: Apple Pie
   m_EditorClassIdentifier: 
-  itemName: applePie
+  itemName: Apple Pie
   isRecipe: 1
+  isKey: 0
   identified: 0
   recipleIngredient:
   - {fileID: 11400000, guid: a95f4dda5168f03448731fae550220c6, type: 2}

@@ -13,6 +13,7 @@ public class KitchenUI : MonoBehaviour
     public List<Item> presetPantryList;
     public GameObject instructionPanel;
     public GameObject failPanel;
+    public GameObject bakePanel;
 
     // Start is called before the first frame update
     void Start()
@@ -71,20 +72,6 @@ public class KitchenUI : MonoBehaviour
                 inspectChild.GetComponent<Button>().onClick.AddListener(() =>
                 {
                     InspectClick(recipe);
-                });
-
-                Transform bakeChild = recipeItem.transform.Find("Bake");
-                bakeChild.GetComponent<Button>().onClick.AddListener(() =>
-                {
-                    if (FollowRecipe(recipe))
-                    {
-                        textChild.GetComponent<TMP_Text>().text = recipe.identified ? recipe.itemName : "Unknown recipe";
-                        pantryText.text = GetPantryContents();
-                    }
-                    else
-                    {
-                        failPanel.SetActive(true);
-                    }
                 });
 
                 i += 1;
