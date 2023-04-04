@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 578ac8b54e646cb45ae29dd9556f79ff, type: 3}
-  m_Name: Croissant
+  m_Script: {fileID: 11500000, guid: df886b3cb1f3e79469c581c2a73fb8f4, type: 3}
+  m_Name: Biscuit
   m_EditorClassIdentifier: 
-  itemName: unknown recipe
-  itemType: 1
-  recipe: butter-1,flour-1,milk-1,sugar-1,water-1,yeast-1
+  itemName: 
+  isRecipe: 1
   identified: 0
+  recipleIngredient: []
+  recipeAmount: 
+  grade: 0

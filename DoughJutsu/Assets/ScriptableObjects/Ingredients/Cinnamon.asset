@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 578ac8b54e646cb45ae29dd9556f79ff, type: 3}
-  m_Name: Water
+  m_Script: {fileID: 11500000, guid: 72b2388a9afeada4d8bd585fcb17769d, type: 3}
+  m_Name: Cinnamon
   m_EditorClassIdentifier: 
-  itemName: water
-  itemType: 0
-  recipe: 
+  itemName: cinnamon
+  isRecipe: 0

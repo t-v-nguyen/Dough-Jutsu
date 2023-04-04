@@ -10,26 +10,6 @@ public class InventorySystem : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1)) {
-            if(inventory[0])
-            {
-                inventory.RemoveAt(0);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2)) {
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3)) {
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4)) {
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5)) {
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha6)) {
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha7)) {
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha8)) {
-        }
     }
 
     public void UpdateInventory()

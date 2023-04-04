@@ -96,9 +96,9 @@ public class KitchenUI : MonoBehaviour
     {
         instructionPanel.SetActive(true);
         string displayText = "";
-        foreach(var tuple in recipe.recipeList)
+        for(int i=0; i<recipe.recipleIngredient.Count; i++)
         {
-            displayText += tuple.Item1.itemName + ": " + tuple.Item2 + "\n"; 
+            displayText += recipe.recipleIngredient[i].itemName + ": " + recipe.recipeAmount[i].ToString() + "\n";
         }
         instructionPanel.transform.Find("ingredients").GetComponent<TMP_Text>().text = displayText;
     }

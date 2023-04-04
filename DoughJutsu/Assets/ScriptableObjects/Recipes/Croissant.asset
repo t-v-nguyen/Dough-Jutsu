@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df886b3cb1f3e79469c581c2a73fb8f4, type: 3}
+  m_Name: Croissant
+  m_EditorClassIdentifier: 
+  itemName: croissant
+  isRecipe: 1
+  identified: 0
+  recipleIngredient:
+  - {fileID: 11400000, guid: 488fb5c2bdef8d74cb0c6b017301496e, type: 2}
+  - {fileID: 11400000, guid: a95f4dda5168f03448731fae550220c6, type: 2}
+  - {fileID: 11400000, guid: e40cd97c748c75349875f5b7a0bd22f3, type: 2}
+  - {fileID: 11400000, guid: 0c99235f513e4a64cb678ddb1e01ae3d, type: 2}
+  - {fileID: 11400000, guid: 7f83c6fe76e760f4c836f7ce766b0fc3, type: 2}
+  - {fileID: 11400000, guid: a6001d41191f28d4c99fdd53340dbfd1, type: 2}
+  recipeAmount: 010000000600000002000000010000000300000001000000
+  grade: 0

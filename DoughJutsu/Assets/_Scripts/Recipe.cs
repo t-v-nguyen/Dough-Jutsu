@@ -13,8 +13,10 @@ public class Recipe : Item
     public bool identified;
     public enum Grade 
     {
-        S, A, B, C, D
+        S, A, B, C, D, U
 
     }
-    public List<Tuple<Ingredient, int>> recipeList;
+    public List<Ingredient> recipleIngredient;
+    public List<int> recipeAmount;
+    public Grade grade;
 }
