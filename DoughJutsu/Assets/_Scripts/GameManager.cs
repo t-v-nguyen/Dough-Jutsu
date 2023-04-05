@@ -46,8 +46,7 @@ public class GameManager : MonoBehaviour
         else
         {
             displayLose.SetActive(true);
-            Time.timeScale = 0f;
-            Invoke("PlayerLoses", 2f);
+            StartCoroutine(LoadSceneAfterDelay());
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha1) && inventory.Count > 0)
@@ -128,6 +127,12 @@ public class GameManager : MonoBehaviour
     private void PlayerLoses()
     {
         SceneManager.LoadScene("ModeMenu");
-        Time.timeScale = 1f;
+        
+    }
+
+    IEnumerator LoadSceneAfterDelay()
+    {
+        yield return new WaitForSeconds(2);
+        PlayerLoses();
     }
 }
