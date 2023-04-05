@@ -16,5 +16,5 @@ public class Key : Item
         red, blue, green
     }
 
-    public Color color;
+    public Color keyColor;
 }

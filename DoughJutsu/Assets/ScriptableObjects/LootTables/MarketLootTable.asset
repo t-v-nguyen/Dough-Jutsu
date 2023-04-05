@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 554323b104fcc9346a062cf27a629b01, type: 3}
-  m_Name: HouseLootTable
+  m_Name: MarketLootTable
   m_EditorClassIdentifier: 
   table:
-  - drop: {fileID: 11400000, guid: 488fb5c2bdef8d74cb0c6b017301496e, type: 2}
+  - drop: {fileID: 11400000, guid: 38a367358bcc0bb4f8ac2e321fc9da93, type: 2}
     weight: 30
-  - drop: {fileID: 11400000, guid: a95f4dda5168f03448731fae550220c6, type: 2}
+  - drop: {fileID: 11400000, guid: 0c9fab1e0933c904bbac68fd9f0293ec, type: 2}
+    weight: 30
+  - drop: {fileID: 11400000, guid: f667be863f89939428055c698a326473, type: 2}
     weight: 30
   - drop: {fileID: 11400000, guid: e40cd97c748c75349875f5b7a0bd22f3, type: 2}
-    weight: 30
+    weight: 20
   - drop: {fileID: 11400000, guid: 0c99235f513e4a64cb678ddb1e01ae3d, type: 2}
-    weight: 30
-  - drop: {fileID: 11400000, guid: 7f83c6fe76e760f4c836f7ce766b0fc3, type: 2}
-    weight: 30
-  - drop: {fileID: 11400000, guid: a6001d41191f28d4c99fdd53340dbfd1, type: 2}
+    weight: 20
+  - drop: {fileID: 11400000, guid: 488fb5c2bdef8d74cb0c6b017301496e, type: 2}
     weight: 20
   - drop: {fileID: 11400000, guid: 37fade481e4245e4997a4828952526fc, type: 2}
     weight: 5
@@ -32,20 +32,20 @@ MonoBehaviour:
   - drop: {fileID: 11400000, guid: 85388d174135bca47ab79bbf25641412, type: 2}
     weight: 5
   - drop: {fileID: 11400000, guid: a2d9c68618761854f87c38f4fe5e34fc, type: 2}
-    weight: 5
+    weight: 10
   - drop: {fileID: 11400000, guid: 65aedb039177ea04fa2542bf9fe0801f, type: 2}
     weight: 5
   - drop: {fileID: 11400000, guid: 5007506eca96a58488a3623680aa4bef, type: 2}
-    weight: 10
+    weight: 5
   - drop: {fileID: 11400000, guid: 3d2118745e78f6f4f988d2c1f369722f, type: 2}
     weight: 5
   - drop: {fileID: 11400000, guid: abedad28e44576241be2c4f8cefeaf5e, type: 2}
-    weight: 5
+    weight: 10
   - drop: {fileID: 11400000, guid: 822b12ba6ab20a74f8171e7a7957992e, type: 2}
     weight: 5
   - drop: {fileID: 11400000, guid: 5bf0f633a11c8d74bbbea131ff69dbe5, type: 2}
     weight: 5
   - drop: {fileID: 11400000, guid: 49f3f10eb7b60d8429b00a85d8c7828e, type: 2}
-    weight: 10
+    weight: 5
   - drop: {fileID: 11400000, guid: 675da8fe60c48a242b9498ce226ebb9a, type: 2}
     weight: 5

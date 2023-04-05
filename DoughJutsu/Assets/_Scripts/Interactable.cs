@@ -11,6 +11,12 @@ public class Interactable : MonoBehaviour
     private float timer = 0f;
     private bool isPlayerOnObject = false;
     public bool isDoor;
+    public enum Color 
+    {
+        red, blue, green
+    }
+
+    public Color doorColor;
     [SerializeField] LootTable lootTable;
 
     private void Start()
@@ -42,10 +48,29 @@ public class Interactable : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.F) && isPlayerOnObject)
         {
-            gm.loadingBar.SetActive(true);
-            timer += Time.deltaTime;
-            progress = timer / fillTime;
-            gm.fillBar.fillAmount = progress;
+            if(isDoor)
+            {
+                if(Pantry.Keys.Count > 0)
+                {
+                    foreach(Key key in Pantry.Keys)
+                    {
+                        if(doorColor.ToString() == key.keyColor.ToString())
+                        {
+                            gm.loadingBar.SetActive(true);
+                            timer += Time.deltaTime;
+                            progress = timer / fillTime;
+                            gm.fillBar.fillAmount = progress;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                gm.loadingBar.SetActive(true);
+                timer += Time.deltaTime;
+                progress = timer / fillTime;
+                gm.fillBar.fillAmount = progress;
+            }
         }
         else if(Input.GetKeyUp(KeyCode.F) && progress < 1f)
         {

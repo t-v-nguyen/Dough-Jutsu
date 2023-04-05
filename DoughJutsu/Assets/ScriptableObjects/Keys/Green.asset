@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Green Key
   isRecipe: 0
   isKey: 1
-  color: 2
+  keyColor: 2

@@ -380,6 +380,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -950,6 +954,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -4593,6 +4601,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -5470,6 +5482,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -5975,6 +5991,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -6045,6 +6065,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -6168,6 +6192,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -6406,6 +6434,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -6688,6 +6720,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -46706,6 +46742,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -46771,6 +46811,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -46836,6 +46880,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -47044,6 +47092,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -47209,6 +47261,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c0181dc12371f7409d7d44e6a6cfb01, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -47336,6 +47392,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 1
+  doorColor: 1
   lootTable: {fileID: 0}
 --- !u!70 &1921203899
 CapsuleCollider2D:
@@ -47486,6 +47543,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 1
+  doorColor: 1
   lootTable: {fileID: 0}
 --- !u!70 &1969743285
 CapsuleCollider2D:

@@ -17,7 +17,7 @@ public class ExtractPoint : MonoBehaviour
             foreach(Item item in gm.inventory)
             {
                 if(!item.isKey) Pantry.PantryItems.Add(item);
-                else Pantry.Keys.Add(item);
+                else Pantry.Keys.Add((Key)item);
             }
             SceneManager.LoadScene("ModeMenu");
         }

@@ -2992,6 +2992,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &403083475
 BoxCollider2D:
@@ -3389,6 +3390,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &700137467
 BoxCollider2D:
@@ -3652,6 +3654,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &710842306
 BoxCollider2D:
@@ -4058,6 +4061,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &829737966
 BoxCollider2D:
@@ -4186,6 +4190,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &894118158
 BoxCollider2D:
@@ -4314,6 +4319,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &944264330
 BoxCollider2D:
@@ -4631,6 +4637,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!1 &1148358489
 GameObject:
@@ -4804,6 +4811,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 1
+  doorColor: 2
   lootTable: {fileID: 0}
 --- !u!70 &1193342881
 CapsuleCollider2D:
@@ -32951,6 +32959,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &1726862395
 BoxCollider2D:
@@ -33190,6 +33199,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &1814027857
 BoxCollider2D:
@@ -33318,6 +33328,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &1874269639
 BoxCollider2D:
@@ -33919,6 +33930,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 0
+  doorColor: 0
   lootTable: {fileID: 11400000, guid: e4131a34a83afa244a9aac74a60b8c04, type: 2}
 --- !u!61 &2129988826
 BoxCollider2D:

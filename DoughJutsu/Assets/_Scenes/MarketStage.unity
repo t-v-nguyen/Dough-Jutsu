@@ -406,6 +406,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -16524,6 +16528,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -17011,6 +17019,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
 --- !u!4 &749290206 stripped
@@ -17073,6 +17085,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
 --- !u!4 &774095244 stripped
@@ -17420,6 +17436,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
 --- !u!4 &1098411549 stripped
@@ -17527,6 +17547,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -17597,6 +17621,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -17902,6 +17930,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
 --- !u!4 &1274734079 stripped
@@ -18281,6 +18313,7 @@ MonoBehaviour:
   fillTime: 1
   progress: 0
   isDoor: 1
+  doorColor: 0
   lootTable: {fileID: 0}
 --- !u!1001 &1552370284
 PrefabInstance:
@@ -18337,6 +18370,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
@@ -111713,6 +111750,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
 --- !u!4 &1605576935 stripped
@@ -111918,6 +111959,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
 --- !u!4 &1780202423 stripped
@@ -112011,6 +112056,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3170475363421359497, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
+      propertyPath: lootTable
+      value: 
+      objectReference: {fileID: 11400000, guid: 733b2164466a2cb4b9d3a632b941d03d, type: 2}
     - target: {fileID: 3170475363421359499, guid: f7f291cb16f0e474ea95e42ef94b4719, type: 3}
       propertyPath: m_SortingLayer
       value: 2
