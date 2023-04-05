@@ -49,3 +49,6 @@ TagManager:
   - name: Environment
     uniqueID: 4087118645
     locked: 0
+  - name: Interactables
+    uniqueID: 45188899
+    locked: 0
